@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Book Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+
+  <div class="container">
+    <!-- Navbar -->
+   <nav class="navbar">
+    <div class="navbar-container">
+      <a href="dashboard.html" class="navbar-brand">Contact Book</a>
+      <ul class="navbar-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><button id="logout-button" class="logout-button">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
+  
+    <h2>Contact Book</h2>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+      <input type="hidden" id="contact-id">
+      <input type="text" id="contact-name" placeholder="Name" required>
+      <input type="email" id="contact-email" placeholder="Email" required>
+      <input type="tel" id="contact-phone" placeholder="Phone" required>
+      <input type="text" id="contact-address" placeholder="Address" required>
+      <button type="submit" id="submit-button">Add Contact</button>
+    </form>
+
+    <!-- Contact List -->
+    <h3>Your Contacts</h3>
+    <ul id="contact-list"></ul>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
